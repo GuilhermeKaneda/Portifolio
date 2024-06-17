@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d00ec0e58d.js" crossorigin="anonymous"></script>
+    <title>Linguagem de Programação</title>
+</head>
+
+<body>
+    <div class="lp">
+        <a href="../menu/index.html" class="left">
+            <i class="fa-solid fa-house fa-sm" style="color: #ffffff;"></i>
+        </a>
+        <p style="margin-left: auto; margin-right: auto;">LINGUAGEM DE PROGRAMAÇÃO</p>
+    </div>
+
+
+
+    <div class="inicio">
+        <p style="font-size: 30px;"><b>Java</b></p>
+        <p>As linguagens de programação são um conjunto de métodos padronizados, formado por regras e estruturas sintáticas e semânticas que, com a implementação de um código fonte, informará instruções de processamento ao computador.</p>
+        <p>A linguagem utilizada em aula foi Java, orientada a objetos e de propósito geral, além de possuir um gerenciamento de memória automático e uma vasta coleção de bibliotecas.</p>
+        <img src="images/java.png" alt="Java" style="padding: 20px 0 20px; max-width: 220px;">
+        <p>Dentre as Integrated Development Environments (IDEs) de Java, a operada em aula foi IntelliJ, por meio de sua versão gratuita, Community Edition.</p>
+    </div>
+
+
+
+    <div class="transicaoDados"></div>
+    <div class="Dados">
+        <p style="font-size: 29px; padding-bottom: 10px;"><b>Tipos de Dados</b></p>
+        <p>Java, como qualquer outra linguagem, possui tipos de dados primitivos, para determinar quais valores uma variável pode assumir e quais operações podem ser realizadas sobre esses valores. Eles são predefinidos e ocupam um espaço na memória padrozinado, ou seja, há um limite para seu valor.</p>
+        <p style="padding-bottom: 30px;">Os principais tipos de dados primitivos são:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de Dado</th>
+                    <th>Tamanho</th>
+                    <th>Intervalo</th>
+                    <th>Uso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>byte</td>
+                    <td>8 bits</td>
+                    <td>-128 a 127</td>
+                    <td>Armazena números inteiros pequenos.</td>
+                </tr>
+                <tr>
+                    <td>short</td>
+                    <td>16 bits</td>
+                    <td>-32.768 a 32.767</td>
+                    <td>Armazena números inteiros médios.</td>
+                </tr>
+                <tr>
+                    <td>int</td>
+                    <td>32 bits</td>
+                    <td>-2.147.483.648 a 2.147.483.647</td>
+                    <td>Tipo de dado padrão para números inteiros.</td>
+                </tr>
+                <tr>
+                    <td>long</td>
+                    <td>64 bits</td>
+                    <td>-9.223.372.036.854.775.808 a 9.223.372.036.854.775.807</td>
+                    <td>Usado quando um intervalo maior que o int é necessário.</td>
+                </tr>
+                <tr>
+                    <td>float</td>
+                    <td>32 bits</td>
+                    <td>±3.40282347E+38F (6-7 dígitos decimais)</td>
+                    <td>Usado para números de ponto flutuante de precisão simples.</td>
+                </tr>
+                <tr>
+                    <td>double</td>
+                    <td>64 bits</td>
+                    <td>±1.79769313486231570E+308 (15 dígitos decimais)</td>
+                    <td>Usado para números de ponto flutuante de precisão maior.</td>
+                </tr>
+                <tr>
+                    <td>char</td>
+                    <td>16 bits</td>
+                    <td>0 a 65.535 (valores Unicode)</td>
+                    <td>Armazena um único caractere Unicode.</td>
+                </tr>
+                <tr>
+                    <td>boolean</td>
+                    <td>1 bit (teoricamente)</td>
+                    <td>true ou false</td>
+                    <td>Armazena valores booleanos. Usado para condições binárias.</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="https://www.w3schools.com/java/java_data_types.asp" target="_blank">
+            <img src="https://img.shields.io/badge/W3Schools-04AA6D?style=for-the-badge&logo=W3Schools&logoColor=white"
+                alt="W3Schools">
+        </a>
+        <p style="padding-top: 40px; font-size: 18px;"><b>Operadores Aritméticos</b></p>
+        <p style="padding-bottom: 20px;">Os operadores matemáticos realizam operações aritméticas básicas, como adição, subtração, multiplicação, divisão e módulo com os tipos dados númericos.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operador</th>
+                    <th>Descrição</th>
+                    <th>Exemplo</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+</td>
+                    <td>Adição</td>
+                    <td>int sum = 5 + 3;</td>
+                    <td>sum = 8</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Subtração</td>
+                    <td>int difference = 5 - 3;</td>
+                    <td>difference = 2</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplicação</td>
+                    <td>int product = 5 * 3;</td>
+                    <td>product = 15</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Divisão</td>
+                    <td>int quotient = 5 / 2;</td>
+                    <td>quotient = 2</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Módulo (Resto da Divisão)</td>
+                    <td>int remainder = 5 % 2;</td>
+                    <td>remainder = 1</td>
+                </tr>
+                <tr>
+                    <td>++</td>
+                    <td>Incremento</td>
+                    <td>int a = 5; a++;</td>
+                    <td>a = 6</td>
+                </tr>
+                <tr>
+                    <td>--</td>
+                    <td>Decremento</td>
+                    <td>int a = 5; a--;</td>
+                    <td>a = 4</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="padding-top: 60px; font-size: 18px;"><b>Operadores Lógicos</b></p>
+        <p style="padding-bottom: 20px;">Os operadores lógicos combinam expressões booleanas e realizam operações lógicas como AND, OR, NOT e comparações.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operador</th>
+                    <th>Descrição</th>
+                    <th>Exemplo</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>==</td>
+                    <td>Igualdade</td>
+                    <td>boolean result = (5 == 3);</td>
+                    <td>result = false</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Desigualdade</td>
+                    <td>boolean result = (5 != 3);</td>
+                    <td>result = true</td>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>Maior que</td>
+                    <td>boolean result = (5 > 3);</td>
+                    <td>result = true</td>
+                </tr>
+                <tr>
+                    <td><</td>
+                    <td>Menor que</td>
+                    <td>boolean result = (5 < 3);</td>
+                    <td>result = false</td>
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>Maior ou igual a</td>
+                    <td>boolean result = (5 >= 5);</td>
+                    <td>result = true</td>
+                </tr>
+                <tr>
+                    <td><=</td>
+                    <td>Menor ou igual a</td>
+                    <td>boolean result = (5 <= 3);</td>
+                    <td>result = false</td>
+                </tr>
+                <tr>
+                    <td>&&</td>
+                    <td>E lógico</td>
+                    <td>boolean result = (true && false);</td>
+                    <td>result = false</td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>OU lógico</td>
+                    <td>boolean result = (true || false);</td>
+                    <td>result = true</td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>NÃO lógico</td>
+                    <td>boolean result = !true;</td>
+                    <td>result = false</td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="lista"><b>LISTA 1</b></p>
+        <a href="https://github.com/GuilhermeKaneda/Java/tree/main/Lista%20de%20exercicios1/Exercicios1" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub">
+        </a>
+    </div>
+
+
+
+    <div class="transicaoEstru"></div>
+    <div class="estruturas">
+        <p style="font-size: 27px; padding-bottom: 5px;"><b>Estruturas de Decisão</b></p>
+        <p style="padding-bottom: 30px;">Em Java, as estruturas de decisão permitem que você controle o fluxo do programa com base em condições específicas.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Estrutura</th>
+                    <th>Descrição</th>
+                    <th>Sintaxe</th>
+                    <th>Exemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>if-else</td>
+                    <td>Executa um bloco de código se a condição `if` for verdadeira e outro bloco se for falsa.</td>
+                    <td>if (condição) { } else { }</td>
+                    <td style="text-align: left;">if (number > 0)<br>System.out.println("O número é positivo.");<br>else<br>System.out.println("O número é negativo.");
+                    </td>
+                </tr>
+                <tr>
+                    <td>else if</td>
+                    <td>Executa um bloco de código se a condição `if` for falsa e a condição `else if` for verdadeira.</td>
+                    <td>if (condição) { } else if (condição) { }</td>
+                    <td style="text-align: left;">if (number > 0)<br>System.out.println("O número é positivo.");<br>else if (number < 0)<br>System.out.println("O número é negativo.");</td>
+                </tr>
+                <tr>
+                    <td>switch</td>
+                    <td>Executa um bloco de código de acordo com o valor de uma expressão específica.</td>
+                    <td>switch (expressão) { case valorN: // Código break; default: // Código }</td>
+                    <td style="text-align: left;">
+                        switch (day) {<br>
+                        case 1:<br>
+                        System.out.println("Domingo");<br>
+                        break;<br>
+                        case 2:<br>
+                        System.out.println("Segunda-feira");<br>
+                        break;<br>
+                        default:<br>
+                        System.out.println("Dia não reconhecido");<br>
+                        }
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="https://www.geeksforgeeks.org/decision-making-javaif-else-switch-break-continue-jump/" target="_blank">
+            <img src="https://img.shields.io/badge/GeeksforGeeks-gray?style=for-the-badge&logo=geeksforgeeks&logoColor=35914c"
+                alt="GeekforGeeks">
+        </a>
+        <p id="lista"><b>LISTA 2</b></p>
+        <a href="https://github.com/GuilhermeKaneda/Java/tree/main/Lista%20de%20exercicios2/Exercicios2" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub">
+        </a>
+        <p style="font-size: 27px; padding: 50px 0 5px;"><b>Estruturas de Repetição</b></p>
+        <p style="padding-bottom: 30px;">As estruturas de repetição permitem executar um bloco de código repetidamente com base em uma condição específica. Cada uma dessas estruturas tem suas características e é adequada para diferentes cenários de programação.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Estrutura</th>
+                    <th>Descrição</th>
+                    <th>Sintaxe</th>
+                    <th>Exemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>for</td>
+                    <td>Repete um bloco de código um número específico de vezes.</td>
+                    <td>for (inicialização; condição; iteração) { }</td>
+                    <td style="text-align: left;">for (int i = 0; i < 5; i++)<br>System.out.println("Número: " + i);</td>
+                </tr>
+                <tr>
+                    <td>while</td>
+                    <td>Repete um bloco de código enquanto a condição for verdadeira.</td>
+                    <td>while (condição) { }</td>
+                    <td style="text-align: left;">while (i < 5)<br>System.out.println("Número: " + i);<br>i++;</td>
+                </tr>
+                <tr>
+                    <td>do-while</td>
+                    <td>Repete um bloco de código uma vez e depois continua a repetir enquanto a condição for verdadeira.</td>
+                    <td>do { } while (condição);</td>
+                    <td style="text-align: left;">do {<br>System.out.println("Número: " + i);<br>i++;<br>} while (i < 5);</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="https://www.geeksforgeeks.org/loops-in-java/" target="_blank">
+            <img src="https://img.shields.io/badge/GeeksforGeeks-gray?style=for-the-badge&logo=geeksforgeeks&logoColor=35914c"
+                alt="GeekforGeeks">
+        </a>
+        <p id="lista"><b>LISTA 3</b></p>
+        <a href="https://github.com/GuilhermeKaneda/Java/tree/main/Lista%20de%20exercicios3/Exercicios3" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub">
+        </a>
+    </div>
+
+
+
+    <div class="transicaoRef"></div>
+    <div class="ref">
+        <p style="font-size: 28px; padding-bottom: 10px"><b>Vetores</b></p>
+        <p style="padding-bottom: 40px;">Vetores são estruturas de dados que armazenam múltiplos valores do mesmo tipo em uma única variável. Eles têm tamanho fixo, definido no momento da criação, e os elementos são acessados por índices.</p>
+        <img src="images/vetor.png" alt="Java" style="padding: 10px 0 0;">
+        <p style="padding-top: 60px; font-size: 27px;"><b>Matrizes</b></p>
+        <p style="padding-bottom: 15px;">Matrizes são vetores de vetores. O tipo mais comum é a matriz bidimensional (vetor 2D), permitem armazenar dados em uma grade.</p>
+        <img src="images/matriz.png" alt="Java" style="padding: 10px 0 0;">
+        <p id="lista"><b>LISTA 4</b></p>
+        <a href="https://github.com/GuilhermeKaneda/Java/tree/main/Lista%20de%20exercicios4/Exercicios4" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub">
+        </a>
+    </div>
+
+
+
+    <div class="transicaoFunções"></div>
+    <div class="funções">
+        <p style="font-size: 28px; padding-bottom: 10px;"><b>Funções</b></p>
+        <p>As funções, em Java, são chamadas de métodos. Um método é um bloco de código que executa uma tarefa específica e retorna um valor (ou não), podendo ser invocado e reutilizado em diferentes partes de um programa, além de possuir parâmetros, variáveis com valores recebidos quando a função é executada.</p>
+        <img src="images/função.png" alt="Função" style="padding: 30px 0 30px;">
+        <p style="padding-bottom: 30px;">Um exemplo de função é 'main', na qual todo programa Java começa a executando e pode ser usada para chamar outras funções.</p>
+
+        <p style="font-size: 27px;"><b>Funções recursivas</b></p>
+        <p style="padding-bottom: 30px;">Já as funções recursivas são aquelas que chamam a si mesmas diretamente ou indiretamente, dividindo, assim, o problema original em subproblemas menores. Mas sempre deve haver uma condição de parada explícita para evitar chamadas recursivas infinitas.</p>
+        <p><b>Exemplo Fatorial</b></p>
+        <p style="padding-bottom: 20px;">Nesse exemplo, dividimos n! em várias recursões para calcular o produto de n com seus inteiros positivos menores até 1.</p>
+        <img src="images/fatorial.png" alt="Função" style="max-width: 550px; border: 1px solid #333; border-radius: 10px;">
+        <p id="lista"><b>LISTA 5</b></p>
+        <a href="https://github.com/GuilhermeKaneda/Java/tree/main/Lista%20de%20exercicios5/Exercicios5" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub">
+        </a>
+    </div>
+
+
+    <div class="transicaoOO"></div>
+    <div class="OO">
+        <p style="font-size: 28px; padding-bottom: 10px;"><b>Programação Orientada a Objeto (POO)</b></p>
+        <p>Por fim, estudamos a programação orientada a objetos em Java, que permite a organização de código de forma modular e reutilizável através de objetos que interagem e conectam entre si por meio das classes.</p>
+        <p style="padding-bottom: 30px;">É um paradigma de programação baseado no conceito de "objetos", que são unidades independentes que contêm dados (atributos) e funcionalidades (métodos) pertencentes a um modelo (classe), para operar nesses dados.</p>
+        <p>Os principais conceitos da POO são:</p>
+        <table>
+            <tr>
+                <th>Elemento</th>
+                <th>Descrição</th>
+                <th>Exemplo em Java</th>
+            </tr>
+            <tr>
+                <td>Classe</td>
+                <td>Modelo que descreve os atributos e métodos dos objetos.</td>
+                <td>public class Carro { }</td>
+            </tr>
+            <tr>
+                <td>Objeto</td>
+                <td>Instância de uma classe que possui seus próprios atributos e métodos.</td>
+                <td>Carro meuCarro = new Carro();</td>
+            </tr>
+            <tr>
+                <td>Encapsulamento</td>
+                <td>Princípio de proteger dados de um objeto.</td>
+                <td>private String marca;<br>public String getMarca() { }</td>
+            </tr>
+            <tr>
+                <td>Sobrecarga</td>
+                <td>Métodos com o mesmo nome e assinaturas diferentes.</td>
+                <td>pubic int somar(int a) { } pubic int somar(int a, int b) { }</td>
+            </tr>
+            <tr>
+                <td>Herança</td>
+                <td>Mecanismo que permite uma classe herdar atributos e métodos de outra.</td>
+                <td>public class CarroEsportivo extends Carro { }</td>
+            </tr>
+            <tr>
+                <td>Override</td>
+                <td>Sobrescrita de métodos herdados.</td>
+                <td>@Override public void buzina() { }</td>
+            </tr>
+            <tr>
+                <td>Abstração</td>
+                <td>Aspectos essenciais de um objeto mas não instanciáveis.</td>
+                <td>public abstract class Animal { }</td>
+            </tr>
+        </table>
+        <a href="https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/" target="_blank">
+            <img src="https://img.shields.io/badge/GeeksforGeeks-gray?style=for-the-badge&logo=geeksforgeeks&logoColor=35914c"
+                alt="GeekforGeeks">
+        </a>
+        <p style="padding-top: 50px;"><b>Exemplo POO</b></p>
+        <p>Nesse exemplo, há uma classe pai abstrata chamada 'Animal' e uma classe filho chamada 'Cachorro'. A classe 'Animal' é abstrata e representa atributos e métodos genérico, enquanto 'Cachorro' representa um cachorro, algo instanciável.</p>
+        <p style="padding-bottom: 20px;">Perceba a prática dos conceitos da POO, como a herença (extends) e encapsulamento (private) de atributos, sobrescrita (@Override) de métodos e classes abstratas (abstract).</p>
+        <img src="images/animal.png" alt="POO" style="max-width: 550px; border: 1px solid #333; border-radius: 10px;">
+        <p style="padding-top: 20px;">Uma vez criada uma classe, podemos instanciar seus objetos na 'main', onde inicia-se o programa.</p>
+        <p style="padding-bottom: 20px;">Nesse caso, criamos um objeto de 'Cachorro' e o instanciamos com um nome, idade e raça através do método construtor. Em seguida, imprimimos seus atributos com os métodos getter.</p>
+        <img src="images/main.png" alt="POO" style="max-width: 650px; border: 1px solid #333; border-radius: 10px;">
+        <p id="lista"><b>LISTA 6</b></p>
+        <a href="https://github.com/GuilhermeKaneda/Java/tree/main/Lista%20de%20exercicios6/Exercicios6" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub">
+        </a>
+    </div>
+    <footer></footer>
+</body>
+<script src="script.js"></script>
+
+</html>

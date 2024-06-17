@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d00ec0e58d.js" crossorigin="anonymous"></script>
+    <title>Banco de Dados</title>
+</head>
+
+<body>
+    <div class="bd">
+        <a href="../menu/index.html" class="left">
+            <i class="fa-solid fa-house fa-sm" style="color: #ffffff;"></i>
+        </a>
+        <p style="margin-left: auto; margin-right: auto;">BANCO DE DADOS</p>
+    </div>
+
+
+
+    <div class="inicio">
+        <p style="font-size: 28px;"><b>Banco de Dados Relacionais</b></p>
+        <p>O banco de dados relacional armazena e fornece acesso a pontos de dados estruturados relacionados entre si.
+            Essas tabelas
+            consistem em linhas e colunas, onde cada linha representa um registro único e cada coluna representa um
+            campo de dados específico.</p>
+        <img src="images/structured data.png" alt="Dados Relacionais" style="padding: 30px 0 30px;">
+        <p>Em nossas aulas, iniciamos com o bando de dados relacional, organizando-os em um formato fixo, como tabelas, onde cada registro segue um esquema predefinido com colunas e tipos de dados.</p>
+    </div>
+
+
+
+    <div class="transicaoDER"></div>
+    <div class="DER">
+        <p style="font-size: 26px; padding-bottom: 10px;"><b>Diagrama Entidade-Relacionamento (DER)</b></p>
+        <p>Para organizar a criação de banco de dados, estudamos o DER, é um tipo de fluxograma utilizado para representar a estrutura lógica deles de forma visual. Ele ilustra como “entidades” as tabelas de dados, que se relacionam entre si dentro de um sistema.</p>
+        <p style="padding-bottom: 30px;">Assim, usam um conjunto definido de símbolos para representar a interconectividade de entidades,
+            relacionamentos e seus atributos.</p>
+        <div class="derElementos">
+            <div class="buttons">
+                <button onclick="abrirDER(1)">Entidade</button>
+                <button onclick="abrirDER(2)">Relacionamento</button>
+                <button onclick="abrirDER(3)">Atributo</button>
+                <button onclick="abrirDER(4)">Cardinalidade</button>
+            </div>
+            <div id="derContainer"></div>
+        </div>
+        <p style="padding-top: 50px; font-size: 20px;"><b>Exemplo</b></p>
+        <p>Nesse exemplo, pacientes, consultas e médicos estão interconectados em um sistema de gerenciamento de consultas médicas, no qual um paciente pode ser atendido por vários médicos e um médico pode atender vários pacientes, logo, a entidade consulta é criada, para a Primary Key não ser afetada.</p>
+        <img src="images/exemploDER.png" alt="DER" style="max-width: 600px; padding: 30px 0 30px;">
+    </div>
+
+
+
+    <div class="transicaoSQL"></div>
+    <div class="SQL">
+        <p style="font-size: 26px; padding-bottom: 10px"><b>Structured Query Language (SQL)</b></p>
+        <p>O SQL é uma linguagem padrão utilizada para gerenciar e manipular as tabelas de bancos de dados relacionais.</p>
+        <p style="padding-bottom: 40px;">Pode ser dividido em várias sub-linguagens, cada uma com um conjunto de comandos específicos:</p>
+        <p style="font-size: 20px;"><b>Data Definition Language (DDL)</b></p>
+        <p>É usada para definir e modificar a estrutura dos objetos de banco de dados, como tabelas, índices e esquemas</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Comando</th>
+                    <th>Descrição</th>
+                    <th>Exemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CREATE</td>
+                    <td>Cria uma nova tabela, banco de dados, índice, ou outro objeto no banco de dados.</td>
+                    <td><code>CREATE TABLE Clientes (id_cliente INT PRIMARY KEY, nome VARCHAR(100));</code></td>
+                </tr>
+                <tr>
+                    <td>ALTER</td>
+                    <td>Modifica a estrutura de uma tabela existente, adicionando, removendo ou alterando colunas.</td>
+                    <td><code>ALTER TABLE Clientes ADD COLUMN email VARCHAR(100);</code></td>
+                </tr>
+                <tr>
+                    <td>DROP</td>
+                    <td>Remove uma tabela, banco de dados, índice, ou outro objeto do banco de dados.</td>
+                    <td><code>DROP TABLE Clientes;</code></td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="padding-top: 30px; font-size: 20px;"><b>Data Manipulation Language (DML)</b></p>
+        <p>Permite inserir, atualizar, excluir e consultar dados nas tabelas do banco de dados.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Comando</th>
+                    <th>Descrição</th>
+                    <th>Exemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SELECT</td>
+                    <td>Recupera dados de uma ou mais tabelas.</td>
+                    <td><code>SELECT * FROM Clientes;</code></td>
+                </tr>
+                <tr>
+                    <td>INSERT</td>
+                    <td>Insere novos registros em uma tabela.</td>
+                    <td><code>INSERT INTO Clientes (id_cliente, nome, email) VALUES (1, 'João Silva', 'joao@example.com');</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>UPDATE</td>
+                    <td>Modifica registros existentes em uma tabela.</td>
+                    <td><code>UPDATE Clientes SET email = 'joao.silva@example.com' WHERE id_cliente = 1;</code></td>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td>Remove registros de uma tabela.</td>
+                    <td><code>DELETE FROM Clientes WHERE id_cliente = 1;</code></td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/" target="_blank">
+            <img src="https://img.shields.io/badge/GeeksforGeeks-gray?style=for-the-badge&logo=geeksforgeeks&logoColor=35914c"
+                alt="GeekforGeeks">
+        </a>
+        <p style="padding-top: 50px; font-size: 20px;"><b>Exemplo</b></p>
+        <p style="padding-bottom: 15px;">Nesse exemplo, através dos comandos do DDL e do DML, criamos, populamos, editamos e imprimimos os dados da tabela Cliente.</p>
+        <img src="images/exemploSQL2.png" alt="SQL" style="max-width: 350px; border: 1px solid #333; border-radius: 5px;">
+    </div>
+
+
+
+    <div class="transicaoProj"></div>
+    <div class="projetos">
+        <p style="font-size: 29px; padding-bottom: 5px;"><b>Projetos</b></p>
+        <p style="padding-bottom: 30px;">Assim, com o planejamento por meio do DER e a programação pelo PostgreSQL, foi possível criar sistemas de banco de dados, relacionando e manipulando suas tabelas.</p>
+        <div class="listProjetos">
+            <div class="buttons">
+                <button onclick="abrirImagem('images/lista.png', 0)">Lista</button>
+                <button onclick="abrirImagem('images/projeto.png', 1)">Sistema Educacional</button>
+            </div>
+            <div class="projetosContainer" id="projetosContainer"></div>
+        </div>
+    </div>
+
+
+
+    <div class="transicaoNoSql"></div>
+    <div class="NoSQL">
+        <p style="font-size: 28px; padding-bottom: 10px;"><b>Banco de Dados NoSQL</b></p>
+        <p>Por fim, estudamos o banco de dados NoSQL (Not Only SQL), um tipo de banco de dados que difere dos relacionais (SQL) em sua estrutura de armazenamento e modelo de dados, capaz de processar dados não estruturados e semiestruturados.</p>
+        <img src="images/data nosql.png" alt="Dados Não Relacionais" style="padding: 30px 0 30px;">
+        <p style="padding-bottom: 30px;">Eles são projetados para lidar facilmente com grandes volumes de dados distribuídos em múltiplos servidores (escalabilidade horizontal), ao contrário dos bancos de dados relacionais que geralmente escalonam verticalmente.</p>
+
+        <p style="font-size: 27px;"><b>MongoDB</b></p>
+        <p style="padding-bottom: 30px;">O software de banco de dados NoSQL usado foi o MongoDB, o qual armazena dados em documentos no formato Binary JSON, estruturado em dados com pares chave-valor, permitindo a criação de esquemas.</p>
+        <p><b>Estrutura do MongoDB</b></p>
+        <p>A hierarquia dos elementos do MongoDB é muito semelhante a estrtutura do SQL.</p>
+        <table>
+            <tr>
+                <th>Estrutura</th>
+                <th>Definição</th>
+            </tr>
+            <tr>
+                <td>Servidor MongoDB</td>
+                <td>Instância do MongoDB que pode hospedar múltiplos bancos de dados.</td>
+            </tr>
+            <tr>
+                <td>Banco de Dados (Database)</td>
+                <td>Contêiner de coleções. Cada banco de dados possui coleções de arquivos.</td>
+            </tr>
+            <tr>
+                <td>Coleção (Collection)</td>
+                <td>Grupo de documentos dentro de um banco de dados. Equivalente a uma tabela em SQL.</td>
+            </tr>
+            <tr>
+                <td>Documento (Document)</td>
+                <td>Unidade de dados armazenado em JSON.</td>
+            </tr>
+            <tr>
+                <td>Campo (Field)</td>
+                <td>Um par chave-valor em um documento. Equivalente a uma coluna em SQL.</td>
+            </tr>
+        </table>
+    </div>
+    <footer></footer>
+</body>
+<script src="script.js"></script>
+
+</html>

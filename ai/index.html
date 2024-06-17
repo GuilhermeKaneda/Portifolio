@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d00ec0e58d.js" crossorigin="anonymous"></script>
+    <title>Automação Industrial</title>
+</head>
+
+<body>
+    <div class="ai">
+        <a href="../menu/index.html" class="left">
+            <i class="fa-solid fa-house fa-sm" style="color: #ffffff;"></i>
+        </a>
+        <p style="margin-left: auto; margin-right: auto;">AUTOMAÇÃO INDUSTRIAL</p>
+    </div>
+
+
+    <div class="inicio">
+        <p style="font-size: 25px;"><b>Embarcados</b></p>
+        <p>Um sistema embarcado é um sistema computacional, conjunto de hardware e software, projetado para executar uma
+            programação específica.
+            São comumente integrados em outros produtos ou equipamentos, visando controlar ou monitorar uma determinada
+            função, ou processo.</p>
+        <p>Em nossas aulas, trabalhamos com o Arduino e o ESP32, sistemas embarcados de código aberto, por meio das
+            plataformas Tinkercad e Wokwi.</p>
+        <div class="images1">
+            <figure>
+                <img src="images/arduino.png" alt="Arduino">
+                <figcaption>Arduino UNO</figcaption>
+            </figure>
+            <figure>
+                <img src="images/esp.png" alt="ESP32">
+                <figcaption>ESP32</figcaption>
+            </figure>
+        </div>
+    </div>
+
+
+
+    <div class="transicaoDigital"></div>
+    <div class="digital">
+        <b style="font-size: 25px; padding-bottom: 10px;">Sinais digitais</b>
+        <p>Inicialmente, aprendemos os principais tipos de dados e as estruturas presentes na linguagem do Arduino:
+            condicionais, loops e funções.</p>
+        <p>Com isso, passamos a manipular as entradas e saídas de sinais digitais, isto é, 0 e 1, por meio das funções
+            pinMode, digitalRead e digitalWrite, para, por exemplo, acender um LED.</p>
+        <table style="margin-top: 50px;">
+            <thead>
+                <tr>
+                    <th>Funções</th>
+                    <th>Funcionamento</th>
+                    <th>Sintaxe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>pinMode</td>
+                    <td>Configura o pino como entrada ou saída</td>
+                    <td>pinMode(pino, modo)</td>
+                </tr>
+                <tr>
+                    <td>digitalWrite</td>
+                    <td>Envia o sinal 0 ou 1 para um pino</td>
+                    <td>digitalWrite(pino, valor)</td>
+                </tr>
+                <tr>
+                    <td>digitalRead</td>
+                    <td>Lê o valor digital de um pino</td>
+                    <td>digitalRead(pino)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 15px; margin-top: 50px;"><b>EXEMPLOS LISTA 1</b></p>
+        <div class="container">
+            <div class="buttons">
+                <button onclick="showVideo('videos/Ex1 - LED.mp4', 0)">LED</button>
+                <button onclick="showVideo('videos/Ex3 - Contador.mp4', 0)">Contador</button>
+            </div>
+            <div id="videosContainer1"></div>
+        </div>
+        <br>
+        <a href="https://github.com/GuilhermeKaneda/Arduino-Lista" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub">
+        </a>
+        <div class="semaforo">
+            <div class="text">
+                <p style="font-size: 17px;"><b>Semáforo</b></p>
+                <p>O semáforo foi nosso primeiro projeto básico, no qual utilizamos estruturas de repetição e
+                    temporização (millis), com saídas digitais para
+                    controlar o ciclo dos LEDs. Seu funcionamento consiste na intercalação das fases do semáforo dos
+                    carros e dos pedestres, de modo que é alterado caso
+                    o botão de pedestre for acionado.</p>
+                <a href="https://github.com/GuilhermeKaneda/Arduino-analogico" target="_blank">
+                    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                        alt="GitHub">
+                </a>
+            </div>
+            <video width="400px" height="auto" controls>
+                <source src="videos/Ex2 - Semáforo 2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+
+    <div class="transicaoAnalogico"></div>
+    <div class="analogico">
+        <p style="font-size: 25px; padding-bottom: 10px;"><b>Sinais analógicos</b></p>
+        <p>Em seguida, iniciamos a programação de entradas e saídas analógicas, que medem variações de tensão com a
+            utilização de funções especiais para
+            leitura e escrita de valores analógicos, como o analogRead e analogWrite.</p>
+        <table style="margin-top: 50px;">
+            <thead>
+                <tr>
+                    <th>Funções</th>
+                    <th>Funcionamento</th>
+                    <th>Sintaxe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>analogWrite</td>
+                    <td>Envia um valor analógico para um pino</td>
+                    <td>analogWrite(pino, valor)</td>
+                </tr>
+                <tr>
+                    <td>analogRead</td>
+                    <td>Lê o valor de um pino analógico</td>
+                    <td>analogRead(pino)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 15px; margin-top: 50px;"><b>EXEMPLOS LISTA 2</b></p>
+        <div class="container">
+            <div class="buttons">
+                <button onclick="showVideo('videos/Ex4 - Potenciômetro.mp4', 1)">Potênciometro</button>
+                <button onclick="showVideo('videos/Ex5 - Fotorresistor.mp4', 1)">Fotoressistor</button>
+                <button onclick="showVideo('videos/Ex6 - Buzzer.mp4', 1)">Buzzer</button>
+            </div>
+            <div id="videosContainer2"></div>
+        </div>        
+        <br>
+        <a href="https://github.com/SEUUSERNAME" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                alt="GitHub">
+        </a>
+    </div>
+
+
+
+    <div class="transicaoLCD"></div>
+    <div class="LCD">
+        <p style="font-size: 25px; padding-bottom: 10px;"><b>Display LCD</b></p>
+        <p>Por fim, estudamos o display LCD (Liquid Crystal Display), utilizado para exibir informações visuais, como
+            texto e gráficos. Para isso, a biblioteca LiquidCrystal_I2C.h
+            fornece várias funções para inicializar, controlar e apagar o display LCD.</p>
+        <table style="margin-top: 50px;">
+            <thead>
+                <tr>
+                    <th>Funções</th>
+                    <th>Funcionamento</th>
+                    <th>Sintaxe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>LCD.init</td>
+                    <td>Inicializa o display LCD</td>
+                    <td>init()</td>
+                </tr>
+                <tr>
+                    <td>LCD.backlight</td>
+                    <td>Liga a luz de fundo (backlight) do display LCD</td>
+                    <td>backlight()</td>
+                </tr>
+                <tr>
+                    <td>LCD.setCursor</td>
+                    <td>Define a posição do cursor no display LCD</td>
+                    <td>setCursor(coluna, linha)</td>
+                </tr>
+                <tr>
+                    <td>LCD.clear</td>
+                    <td>Apaga todo o conteúdo do display</td>
+                    <td>clear()</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="semaforo">
+            <div class="text">
+                <h3>Sistema com display LCD</h3>
+                <p>Em nosso principal projeto com o display, criamos um sistema com três funções controladas por botões:</p>
+                <ol>
+                    <li>Contar ao Clicar: Conta os cliques do botão azul e zera a contagem com o botão amarelo</li>
+                    <li>Relógio: Cronometra o tempo. O botão azul converte 1s para 250ms, já o amarelo volta ao normal</li>
+                    <li>Zerar Dados: Uma mensagem de aviso é exibida caso o botão verde for pressionado por mais de 3s</li>
+                </ol>
+                <a href="https://github.com/GuilhermeKaneda/ESP32-Display" target="_blank">
+                    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                        alt="GitHub">
+                </a>
+            </div>
+            <video width="550" height="auto" controls>
+                <source src="videos/Ex 7 - ESP.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+<script src="script.js"></script>
+</html>

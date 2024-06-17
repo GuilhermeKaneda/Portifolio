@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d00ec0e58d.js" crossorigin="anonymous"></script>
+    <title>Ciência de Dados</title>
+</head>
+
+<body>
+    <div class="cd">
+        <a href="../menu/index.html" class="left">
+            <i class="fa-solid fa-house fa-sm" style="color: #ffffff;"></i>
+        </a>
+        <p style="margin-left: auto; margin-right: auto;">CIÊNCIA DE DADOS</p>
+    </div>
+
+
+
+    <div class="inicio">
+        <p style="font-size: 30px;"><b>Estatística</b></p>
+        <p>Estatística é a ciência que apresenta processos próprios para coletar, apresentar e interpretar adequadamente conjuntos de dados, sejam eles numéricos ou não. Seu objetivo é apresentar informações sobre dados em análise para que se tenha maior compreensão dos fatos que os mesmos representam.</p>
+        <p style="padding-bottom: 30px;">A Ciência de Dados, portanto, envolve a utilização de várias linguagens de programação, ferramentas e técnicas para otimizar a análise de dados.</p>
+        <p><b>Python</b></p>
+        <p>Em nossas aulas, utilizamos a linguagem de programação Python para manipular e visualizar de dados, que, juntamente com suas bibliotecas Pandas, Numpy e Matplotlib, permite realizar tarefas complexas de rapidamente.</p>
+        <img src="images/python.png" alt="Python" style="padding: 20px 0 20px; max-width: 350px;">
+        <p>A plataforma usada para desenvolvimento e execução de códigos, foi o Google Colaboratory (Colab) diretamente no navegador.</p>
+    </div>
+
+
+
+    <div class="transicaoAmos"></div>
+    <div class="amostragem">
+        <p style="font-size: 29px; padding-bottom: 10px;"><b>Amostragem</b></p>
+        <p style="padding-bottom: 30px;">A amostragem refere-se ao processo de seleção de uma parte representativa de um conjunto de dados maior para análise estatística.</p>
+        <p>Existem diferentes métodos de amostragem:</p>
+        <table>
+            <tr>
+                <th>Tipo de Amostragem</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>Amostragem Aleatória Simples</td>
+                <td>Cada elemento da população tem a mesma probabilidade de ser selecionado.</td>
+            </tr>
+            <tr>
+                <td>Amostragem Estratificada</td>
+                <td>Divide a população em estratos e seleciona uma amostra aleatória simples de cada estrato.</td>
+            </tr>
+            <tr>
+                <td>Amostragem Sistemática</td>
+                <td>Os elementos são selecionados em intervalos fixos a partir de uma lista ordenada da população.</td>
+            </tr>
+        </table>
+        <p style="padding-top: 40px; font-size: 18px;"><b>Pandas</b></p>
+        <p style="padding-bottom: 20px;">Para isso, utlizamos a biblioteca Pandas, a qual oferece métodos para realizar amostragem simples e complexa.</p>
+        <table>
+            <tr>
+                <th>Método</th>
+                <th>Sintaxe</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>iloc</td>
+                <td>df.iloc[linha, coluna]</td>
+                <td>Seleciona dados por índices inteiros, baseado na posição.</td>
+            </tr>
+            <tr>
+                <td>loc</td>
+                <td>df.loc[índice, coluna]</td>
+                <td>Seleciona dados por rótulos de índices ou por condições booleanas.</td>
+            </tr>
+            <tr>
+                <td>concat</td>
+                <td>pd.concat([df1, df2, ...])</td>
+                <td>Concatena DataFrames ao longo de um eixo específico.</td>
+            </tr>
+            <tr>
+                <td>sample</td>
+                <td>df.sample(n=None, frac=None, replace=False, random_state=None)</td>
+                <td>Retorna uma amostra aleatória de itens de um DataFrame.</td>
+            </tr>
+            <tr>
+                <td>sort_index</td>
+                <td>df.sort_index(axis=0, level=None, ascending=True, inplace=False, ...)</td>
+                <td>Ordena os rótulos de índice ao longo de um eixo.</td>
+            </tr>
+        </table>
+        <p style="padding: 30px 0 30px;">Já no Colab, importamos como exemplo um arquivo xls (excel) sobre os tribulantes da obra Titanic. Assim, realizamos diversas amostragens desses dados, a partir das linhas e colunas da tabela.</p>
+        <div class="colabElementos">
+            <div class="buttons">
+                <label><input type="radio" name="mode" onclick="abrirColab('Amostra por linhas', 'images/linhas colunas.png', 0)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Amostra aleatória', 'images/aleatorio.png', 0)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Amostra aleatória decrescente', 'images/aleatorio decrescente.png', 0)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Amostra Sistemática', 'images/sistematica.png', 0)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Amostra Sistemática por sexo', 'images/sistematica sexo.png', 0)"/></label>
+            </div>
+            <div id="colabContainer1" class="colabContainer"></div>
+        </div>        
+    </div>
+
+
+
+    <div class="transicaoModa"></div>
+    <div class="moda">
+        <p style="font-size: 27px; padding-bottom: 5px;"><b>Moda</b></p>
+        <p style="padding-bottom: 30px;">A moda de um conjunto de dados é o valor que ocorre com maior frequência. Conforme o número de valores que ocorrem com a mesma frequência máxima, a moda pode ser: unimodal, bimodal e polimodal.</p>
+        <img src="images/moda.png" alt="Moda" style="padding: 20px 0 20px; max-width: 350px;">
+        <p style="padding-bottom: 30px;">Assim, semelhantemente a amostragem, utilzamos os métodos do Pandas para encontrar as modas da tabela 'Titanic' de diferentes formas.</p>
+        <div class="colabElementos">
+            <div class="buttons">
+                <label><input type="radio" name="mode" onclick="abrirColab('Modas em vetores', 'images/moda pandas.png', 1)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Verificação do tipo de moda', 'images/moda if.png', 1)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Moda de cada coluna da tabela', 'images/moda colunas.png', 1)"/></label>
+            </div>
+            <div id="colabContainer2" class="colabContainer"></div>
+        </div>  
+    </div>
+
+
+
+    <div class="transicaoMediana"></div>
+    <div class="mediana">
+        <p style="font-size: 27px; padding-bottom: 5px;"><b>Mediana</b></p>
+        <p style="padding-bottom: 30px;">A mediana é o valor que divide um conjunto de dados ordenado ao meio, onde metade dos valores estão abaixo e metade estão acima desse valor. Se o número de observações for par, a mediana é a média dos valores no meio da sequência ordenada.</p>
+        <img src="images/mediana.png" alt="Mediana" style="padding: 20px 0 20px; max-width: 350px;">
+        <p style="padding-bottom: 30px;">É possível também calcular a mediana dos dados e amostras da tabela 'Titanic' efitivamente, por meio da biblioteca Pandas.</p>
+        <div class="colabElementos">
+            <div class="buttons">
+                <label><input type="radio" name="mode" onclick="abrirColab('Mediana em conjunto impár', 'images/mediana impar.png', 2)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Mediana em conjunto par', 'images/mediana par.png', 2)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Mediana com valores ausentes', 'images/mediana ausente.png', 2)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Mediana das colunas da tabela', 'images/mediana colunas.png', 2)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Mediana das colunas em gráficos', 'images/mediana grafico.png', 2)"/></label>
+            </div>
+            <div id="colabContainer3" class="colabContainer"></div>
+        </div>  
+    </div>
+
+    <div class="transicaoMedia"></div>
+    <div class="media">
+        <p style="font-size: 27px; padding-bottom: 5px;"><b>Média</b></p>
+        <p style="padding-bottom: 30px;">A média aritmética é calculada somando todos os valores em um conjunto de dados e dividindo pelo número total de observações, usada para encontrar um valor central que representa aproximadamente o conjunto de dados.</p>
+        <img src="images/media.png" alt="Média" style="padding: 20px 0 20px; max-width: 350px;">
+        <p style="padding-bottom: 30px;">Usando a mesma lógica dos conceitos anteriores, podemos calcular a média das colunas do DataFrame, com a função mean() de Pandas.</p>
+        <img src="images/media colunas.png" alt="Média nas colunas" style="max-width: 70%; border: 1px solid #333; border-radius: 10px;">
+    </div>
+
+
+
+    <div class="transicaoPer"></div>
+    <div class="percentil">
+        <p style="font-size: 27px; padding-bottom: 5px;"><b>Percentil</b></p>
+        <p style="padding-bottom: 30px;">O percentil é calculado ordenando todos os valores em um conjunto de dados e dividindo-os em 100 partes, cada uma com uma percentagem de dados aproximadamente igual.</p>
+        <img src="images/percentil.png" alt="Percentil" style="padding: 20px 0 20px; max-width: 50%;">
+        <p style="padding-bottom: 30px;">No Colab, calculamos o percentil de array e das colunas do DataFrame com os métodos da biblioteca.</p>
+        <div class="colabElementos">
+            <div class="buttons">
+                <label><input type="radio" name="mode" onclick="abrirColab('Percentil de um DataFrame', 'images/percentil dataframe.png', 3)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Percentil das colunas da tabela', 'images/percentil colunas.png', 3)"/></label>
+            </div>
+            <div id="colabContainer4" class="colabContainer"></div>
+        </div>
+    </div>
+
+
+    <div class="transicaoAmpVar"></div>
+    <div class="amplitudeVariancia">
+        <p style="font-size: 27px; padding-bottom: 5px;"><b>Amplitude</b></p>
+        <p style="padding-bottom: 30px;">A amplitude é calculada subtraindo o menor valor observado (mínimo) do maior valor observado (máximo) em um conjunto de dados, isto é: A = máximo - mínimo.</p>
+        <img src="images/amplitude.png" alt="Amplitude" style="padding: 20px 0 20px; max-width: 50%;">
+        <p style="padding-bottom: 30px;">Assim, em Python, para calcular a amplitude, basta identificar o menor e o maior valores, com métodos específicos para essas operações.</p>
+        <div class="colabElementos">
+            <div class="buttons">
+                <label><input type="radio" name="mode" onclick="abrirColab('Amplitude de um DataFrame', 'images/amplitude dataframe.png', 4)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Amplitude de peças', 'images/amplitude peças.png', 4)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Amplitude de prédios', 'images/amplitude predio.png', 4)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Amplitude das colunas da tabela', 'images/amplitude colunas.png', 4)"/></label>
+            </div>
+            <div id="colabContainer5" class="colabContainer"></div>
+        </div> 
+
+        <p style="font-size: 27px; padding: 100px 0 5px;"><b>Variância</b></p>
+        <p style="padding-bottom: 30px;">Por fim, estudamos a variância, medida estatística que calcula a média dos quadrados das diferenças entre cada valor do conjunto de dados e a média do conjunto. O cálculo mede a dispersão dos dados em torno da média, ou seja, quanto maior a variância, mais espalhados estão os valores.</p>
+        <img src="images/variancia.png" alt="Variância" style="padding: 10px 0 20px; max-width: 50%;">
+        <p style="padding-bottom: 30px;">De maneira simples, é possível também calcular a variância de um conjunto de dados com a iteração dele em Python, podendo descobrir a variância da tabela 'Titanic'.</p>
+        <div class="colabElementos">
+            <div class="buttons">
+                <label><input type="radio" name="mode" onclick="abrirColab('Código da variâcia', 'images/variancia codigo.png', 5)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Variâcia dos prédios', 'images/variancia predio.png', 5)"/></label>
+                <label><input type="radio" name="mode" onclick="abrirColab('Variâcia das colunas da tabela', 'images/variancia predio.png', 5)"/></label>
+            </div>
+            <div id="colabContainer6" class="colabContainer"></div>
+        </div> 
+    </div>
+    <footer></footer>
+</body>
+<script src="script.js"></script>
+
+</html>

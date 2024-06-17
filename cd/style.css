@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    text-align: center;
+    align-items: center;
+    background-color: #f6f5ff;
+    font-size: 17px;
+}
+
+.cd {
+    color: #FEFCFD;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    font-size: 40px;
+    font-family: "Roboto Slab", serif;
+    text-shadow: -0.01em -0.01em 0.5em #231e4e;
+    background: linear-gradient(to right, #554f85, #3D348B 50%, #554f85); 
+    padding: 0 30px; 
+}
+
+#lista {
+    font-family: "Roboto Slab", serif;
+    padding-top: 30px;
+}
+
+.inicio {
+    padding: 0 12vw;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.transicaoAmos {
+    height: 10vh;
+    background: linear-gradient(to bottom, #f6f5ff, #d8d4f7);
+}
+
+.amostragem {
+    padding: 0 11vw;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: #d8d4f7;
+}
+
+.colabElementos {
+    display: flex;
+    background-color: #666288;
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.colabContainer {
+    align-self: center; 
+    padding: 20px;
+}
+
+.transicaoModa {
+    height: 10vh;
+    background: linear-gradient(to bottom, #d8d4f7, #f6f5ff);
+}
+
+.moda {
+    padding: 0 12vw;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.transicaoMediana {
+    height: 10vh;
+    background: linear-gradient(to bottom, #f6f5ff, #d8d4f7);
+}
+
+.mediana {
+    padding: 0 12vw;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: #d8d4f7;
+}
+
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid #333;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+footer {
+    width: 100%;
+    height: 8vh;
+    bottom: 0;
+    background-color: #000000;
+}
+
+li {
+    padding: 10px 0;
+}
+
+
+.transicaoMedia {
+    height: 10vh;
+    background: linear-gradient(to bottom, #d8d4f7, #f6f5ff);
+}
+
+.media {
+    padding: 0 12vw;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.transicaoPer {
+    height: 10vh;
+    background: linear-gradient(to bottom, #f6f5ff, #d8d4f7);
+}
+
+.percentil {
+    padding: 0 12vw;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: #d8d4f7;
+}
+
+.transicaoAmpVar {
+    height: 10vh;
+    background: linear-gradient(to bottom, #d8d4f7, #f6f5ff);
+}
+
+.amplitudeVariancia {
+    padding: 0 12vw;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
